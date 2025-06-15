@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bubbles">
+  <span style="--hue: 10;"></span>
+  <span style="--hue: 40;"></span>
+  <span style="--hue: 90;"></span>
+  <span style="--hue: 150;"></span>
+  <span style="--hue: 200;"></span>
+  <span style="--hue: 250;"></span>
+  <span style="--hue: 300;"></span>
+  <span style="--hue: 330;"></span>
+  <span style="--hue: 180;"></span>
+  <span style="--hue: 60;"></span>
+</div>
+
+
+
+  <div class="calculator">
+    <input type="text" id="display" readonly placeholder="ANS is on the Way!">
+
+    <div class="buttons">
+  <button class="calc-btn">(</button>
+  <button class="calc-btn">)</button>
+  <button class="calc-btn">%</button>
+  <button class="calc-btn">√</button>
+  <button class="calc-btn" id="del">Del</button>
+
+  <button class="calc-btn">7</button>
+  <button class="calc-btn">8</button>
+  <button class="calc-btn">9</button>
+  <button class="calc-btn">/</button>
+  <button class="calc-btn" id="clear">AC</button>
+
+
+  <button class="calc-btn">4</button>
+  <button class="calc-btn">5</button>
+  <button class="calc-btn">6</button>
+  <button class="calc-btn">*</button>
+  <button class="calc-btn">.</button>
+
+  <button class="calc-btn">1</button>
+  <button class="calc-btn">2</button>
+  <button class="calc-btn">3</button>
+  <button class="calc-btn">-</button>
+  <button class="calc-btn">±</button>
+
+  <button class="calc-btn">0</button>
+  <button class="calc-btn" id="enter" colspan="2">ENTER</button>
+  <button class="calc-btn">+</button>
+  <button id="toggle-theme">🌙</button>
+</div>
+
+
+    <!-- ✅ History Box Goes Here -->
+    <div id="history-box">
+  <h3>History</h3>
+  <ul id="history"></ul>
+  <button id="clear-history">Clear History</button> <!-- ✅ Add this -->
+</div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
